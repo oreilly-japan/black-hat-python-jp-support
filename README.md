@@ -6,31 +6,34 @@
 
 サンプルコードの解説は本書籍をご覧ください。
 
-## 正誤表【案１】
+## 正誤表
 
 まだありません。誤植など間違いを見つけた方は、japan_at_oreilly.co.jpまでお知らせください。
 
-|ページ|誤|正|備考|刷|
-|:--|:--|:--|:--|:--|
-|P.xiv|http://www.oreilly.co.jp/books/9784873117317/|https://github.com/oreilly-japan/black-hat-python-jp-support|　|1刷まで|
-|P.123|★★★|☆☆☆|　|2刷まで|
-|　|　|　|　|　|
-|　|　|　|　|　|
+### 初版第1刷（2刷以降では修正済み）
 
-## 正誤表【案２】
+#### まえがき P.xiv
 
-まだありません。誤植など間違いを見つけた方は、japan_at_oreilly.co.jpまでお知らせください。
+誤
+```
+http://www.oreilly.co.jp/books/9784873117317/
+```
+正
 
-**P.xiv**
+```
+https://github.com/oreilly-japan/black-hat-python-jp-support
+```
 
-_誤_　http://www.oreilly.co.jp/books/9784873117317/
+### 初版第2刷（3刷以降では修正済み）
 
-_正_　https://github.com/oreilly-japan/black-hat-python-jp-support
+#### 7章 P.123
 
-**P.123**
+誤
+```
+★★★
+```
+正
 
-_誤_　★★★
-
-_正_　☆☆☆
-
-
+```
+☆☆☆
+```
