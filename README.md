@@ -1,0 +1,36 @@
+# 『サイバーセキュリティプログラミング』サポートページ
+
+本リポジトリはオライリー・ジャパン発行書籍『[サイバーセキュリティプログラミング](http://www.oreilly.co.jp/books/9784873117317/)』（原書名『[Black Hat Python](https://www.nostarch.com/blackhatpython)』） のサポートサイトです。
+
+## サンプルコード
+
+サンプルコードの解説は本書籍をご覧ください。
+
+## 正誤表【案１】
+
+まだありません。誤植など間違いを見つけた方は、japan@oreilly.co.jpまでお知らせください。
+
+|ページ|誤|正|備考|刷|
+|:--|:--|:--|:--|:--|
+|P.xiv|<http://www.oreilly.co.jp/books/9784873117317/>|<https://github.com/oreilly-japan/black-hat-python-jp-support>|　|1刷まで|
+|P.123|★★★|☆☆☆|　|2刷まで|
+|　|　|　|　|　|
+|　|　|　|　|　|
+
+## 正誤表【案２】
+
+まだありません。誤植など間違いを見つけた方は、japan@oreilly.co.jpまでお知らせください。
+
+* _P.xiv_
+
+_誤_　<http://www.oreilly.co.jp/books/9784873117317/>
+
+_正_　<https://github.com/oreilly-japan/black-hat-python-jp-support>
+
+* _P.123_
+
+_誤_　★★★
+
+_正_　☆☆☆
+
+
