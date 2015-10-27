@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from burp import IBurpExtender
 from burp import IContextMenuFactory
