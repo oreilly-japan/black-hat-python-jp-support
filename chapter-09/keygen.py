@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from Crypto.PublicKey import RSA 
 new_key = RSA.generate(2048, e=65537) 
