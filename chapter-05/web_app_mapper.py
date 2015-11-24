@@ -9,7 +9,7 @@ threads   = 10
 
 target    = "http://www.test.com"
 directory = "/Users/justin/Downloads/joomla-3.1.1"
-filters   = [".jpg",".gif","png",".css"]
+filters   = [".jpg",".gif",".png",".css"]
 
 os.chdir(directory)
 
