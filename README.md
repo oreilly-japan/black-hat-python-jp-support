@@ -75,6 +75,27 @@ filters   = [".jpg",".gif",".png",".css"]
 サンドボックス
 ```
 
+#### P162 「10.1 必要要素のインストール」の17行目
+
+誤
+
+```
+1. 次のzipファイルをダウンロードする。
+http://www.nostarch.com/blackhatpython/bhpservice.zip
+2. バッチファイル`install_service.bat`を使用してサービスをインストールする。`Administrator`同等の権限で実行することを忘れずに。
+```
+
+正
+
+```
+1. 本書日本語版のサポートページにある次のリポジトリを複製する。
+https://github.com/oreilly-japan/black-hat-python-jp-support/tree/master/chapter-10
+
+2. `bhservice.rtf`を参考にサービスをインストールする（`Administrator`同等の権限で実行することを忘れずに）。
+```
+
+
+
 #### P173 「10.5 コードインジェクション」の4行目
 
 誤
