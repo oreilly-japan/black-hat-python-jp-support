@@ -6,6 +6,33 @@
 
 サンプルコードの解説は本書籍をご覧ください。
 
+### 補足事項
+
+#### （付録A）bhpasm.pyが異常終了する事象について
+
+2015/10/28にmiasmの`parse_txt`関数の戻り値が[変更](https://github.com/cea-sec/miasm/commit/dfdcae8bfeefc5c4395ee1e909bab83e211ffefb)されました。
+この変更に伴い、2015/10/28以降のmiasmがセットアップされた状態でbhpasm.pyを実行すると、以下のような例外が発生します。
+```sh
+$ python bhpasm.py
+Traceback (most recent call last):
+  File "bhpasm.py", line 57, in <module>
+    native_code = assemble_text(asm_helloworld, [("L_MAIN", 0)])
+  File "bhpasm.py", line 15, in assemble_text
+    patches = asmbloc.asm_resolve_final(mnemo, sections[0], symbol_pool)
+  File "/usr/local/lib/python2.7/dist-packages/miasm2/core/asmbloc.py", line 1050, in asm_resolve_final
+    sanity_check_blocks(blocks)
+  File "/usr/local/lib/python2.7/dist-packages/miasm2/core/asmbloc.py", line 1031, in sanity_check_blocks
+    blocks_graph = basicblocs(blocks)
+  File "/usr/local/lib/python2.7/dist-packages/miasm2/core/asmbloc.py", line 1097, in __init__
+    self.add_blocs(ab)
+  File "/usr/local/lib/python2.7/dist-packages/miasm2/core/asmbloc.py", line 1107, in add_blocs
+    for b in ab:
+TypeError: 'asm_bloc' object is not iterable
+```
+
+対処としては、本書執筆時点の[miasm](https://github.com/cea-sec/miasm/tree/dcc488ec39d9a96b70c728ccdbcd43e62b25ae99)をご利用ください。
+具体的には、付録Aに記載されている[Dockerfile](/appendix-A/bhp_miasm/Dockerfile)のコメント記号（#）を削除しイメージを再構築することで、本書執筆時点のmiasmをご利用いただけます。
+
 ## 正誤表
 
 下記の通り、誤記がありましたので訂正いたします。ご迷惑をおかけいたしましたことをお詫び申し上げます。
