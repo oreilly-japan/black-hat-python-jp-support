@@ -88,6 +88,34 @@ filters   = [".jpg",".gif","png",".css"]
 filters   = [".jpg",".gif",".png",".css"]
 ```
 
+#### P122 コマンド実行
+
+誤
+
+```
+$ pip install github3
+```
+
+正
+
+```
+$ pip install github3.py
+```
+
+#### P122 注釈
+
+誤
+
+```
+【＊1.】ライブラリは<https://github.com/copitux/python-github3/>から入手可能。
+```
+
+正
+
+```
+【＊1.】ライブラリは<https://github.com/sigmavirus24/github3.py/>から入手可能。
+```
+
 #### P144 上から9行目
 
 誤
