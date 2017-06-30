@@ -39,6 +39,20 @@ TypeError: 'asm_bloc' object is not iterable
 本ページに掲載されていない誤植・間違いを見つけた方は、japan_at_oreilly.co.jpまでお知らせください。
 
 ### 第1刷、第2刷、第3刷、第4刷をお持ちの方
+
+#### P39の図2-3内
+誤
+
+```
+ssh -L 8008:web:80 justin@sshserver
+```
+
+正
+
+```
+ssh -R 8008:web:80 justin@sshserver
+```
+
 #### P59の3行目
 誤
 
